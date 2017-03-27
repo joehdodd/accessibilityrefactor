@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -71,13 +71,26 @@
         <div class="flex">
           <img class="photo" src= "img/the_band.jpg" alt="A photo of the band">
             <div class="container">
-              <form class="newsletter">
-                  <p>Name: <input type ="text" name="textfield"></p>
-                  <p>Email: <input type ="email" name="textfield"></p>
-                  <p>Retype Email: <input type ="email" name="textfield"></p>
-                  <button type="submit">Sign Up</button>
-              </form>
-            </div>
+          <form action="#" method="post" class="newsletter">
+            <fieldset>
+              <legend>Subscribe:</legend>
+              <ul>
+                <li>
+                  <label for="fullname">Name:</label>
+                  <input type="text" name="fullname" id="fullname" placeholder="required" required="">
+                </li>
+                <li>
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" placeholder="required" required="">
+                </li>
+                <li>
+                  <label for="confirmEmail">Retype Email:</label>
+                  <input type="email" name="confirmEmail" id="confirmEmail" placeholder="required" required="">
+                </li>
+              </ul>
+              <button class="button" type="submit" aria-describedby="signup">Sign Up</button>
+              <p class="info" id="signup">This will subscribe you to our weekly newsletter</p>
+            </fieldset>
         </div>
       </div>
     </main>
